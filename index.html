@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Album Cover Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Угадай исполнителя по обложке альбома</h1>
+
+      <!-- Start Screen -->
+      <div id="start-screen" class="screen">
+        <h2>Угадайте исполнителя по обложке альбома</h2>
+        <p>Вы увидите обложку альбома, по которой нужно угадать исполнителя</p>
+        <p>У вас 30 секунд на ответ и 3 попытки.</p>
+        <button id="start-btn" class="btn">Начать</button>
+      </div>
+
+      <!-- Game Screen -->
+      <div id="game-screen" class="screen">
+        <h2>Кто исполнитель?</h2>
+        <img id="album-cover" src="" alt="Album Cover" />
+
+        <div class="timer-container">
+          <div id="time">30</div>
+          <div class="progress-bar">
+            <div id="progress-bar"></div>
+          </div>
+        </div>
+
+        <input
+          type="text"
+          id="answer-input"
+          placeholder="Введите имя исполнителя..."
+        />
+
+        <div class="game-info">
+          <div class="info-box">Счёт: <span id="score">0</span></div>
+          <div class="info-box">
+            Осталось попыток: <span id="attempts">3</span>
+          </div>
+          <div class="info-box">
+            Вопрос: <span id="question-count">1</span>/10
+          </div>
+        </div>
+
+        <button id="submit-btn" class="btn">Проверить</button>
+        <button id="hint-btn" class="btn">Подсказка</button>
+      </div>
+
+      <!-- Feedback Screen -->
+      <div id="feedback-screen" class="screen">
+        <h2 id="feedback-title"></h2>
+        <p id="feedback-message"></p>
+
+        <div class="feedback-content">
+          <img
+            id="feedback-image"
+            class="feedback-image"
+            src=""
+            alt="Album Cover"
+          />
+          <p>Правильный ответ: <span id="correct-answer"></span></p>
+          <p>Альбом: <span id="correct-album"></span></p>
+        </div>
+
+        <button id="next-btn" class="btn">Следующий вопрос</button>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="results-screen" class="screen">
+        <h2>Квиз завершён!</h2>
+        <p>
+          Your final score: <span id="final-score">0</span> из
+          <span id="total-questions">10</span>
+        </p>
+        <button id="restart-btn" class="btn">Сыграть ещё раз</button>
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="script.js"></script>
+</html>
