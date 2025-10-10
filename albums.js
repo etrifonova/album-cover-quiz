@@ -48,4 +48,25 @@ export const albumQuizData = [
           album: "Fear of a Black Planet",
           hint: "P _ _ _ _ _  E _ _ _ _",
         },
+        {
+          questionImage: "./album covers/08.png",
+          answerImage: "./album covers/08_the beatles.png",
+          artist: "The Beatles",
+          album: "Sgt. Pepper's Lonely Hearts Club Band",
+          hint: "The B _ _ _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/09.png",
+          answerImage: "./album covers/09_hole.png",
+          artist: "Hole",
+          album: "Live Through This",
+          hint: "H _ _ _",
+        },
+        {
+          questionImage: "./album covers/10.png",
+          answerImage: "./album covers/10_kendrick lamar.png",
+          artist: "Kendrick Lamar",
+          album: "To Pimp a Butterfly",
+          hint: "K _ _ _ _ _ _ _  L _ _ _ _",
+        },
       ];
