@@ -28,7 +28,7 @@ body {
 h1 {
     margin-bottom: 20px;
     color: #fdbb2d;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 h2 {
@@ -73,8 +73,9 @@ p {
 }
 
 #album-cover {
+    width: 100%;
     max-width: 400px;
-    max-height: 400px;
+    height: auto;
     border-radius: 10px;
     margin: 20px auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
@@ -82,7 +83,8 @@ p {
 }
 
 #answer-input {
-    width: 80%;
+    width: 100%;
+    max-width: 400px;
     padding: 12px 15px;
     border: none;
     border-radius: 50px;
@@ -104,10 +106,11 @@ p {
 
 .progress-bar {
     width: 100%;
+    max-width: 400px;
     height: 10px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    margin: 10px 0;
+    margin: 10px auto;
     overflow: hidden;
 }
 
@@ -122,6 +125,8 @@ p {
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .info-box {
@@ -129,7 +134,7 @@ p {
     padding: 10px 15px;
     border-radius: 10px;
     flex: 1;
-    margin: 0 10px;
+    min-width: 120px;
 }
 
 .correct {
@@ -148,7 +153,9 @@ p {
 }
 
 .feedback-image {
+    width: 100%;
     max-width: 400px;
+    height: auto;
     border-radius: 10px;
     margin: 15px auto;
     display: block;
@@ -162,25 +169,74 @@ p {
     margin: 20px 0;
 }
 
-@media (max-width: 600px) {
+/* Mobile-specific styles */
+@media (max-width: 768px) {
     .container {
-        padding: 20px;
+        padding: 20px 15px;
+        width: 95%;
     }
 
     h1 {
         font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 
     #album-cover,
     .feedback-image {
-        max-width: 300px;
+        max-width: 100%;
+        margin: 15px auto;
     }
 
     .game-info {
         flex-direction: column;
+        align-items: center;
     }
 
     .info-box {
+        width: 100%;
+        max-width: 200px;
         margin: 5px 0;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    #answer-input {
+        max-width: 100%;
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .progress-bar {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 15px 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    .feedback-content {
+        padding: 15px;
+    }
+
+    #time {
+        font-size: 1.8rem;
     }
 }
