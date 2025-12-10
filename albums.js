@@ -1,7 +1,7 @@
 export const albumQuizData = [
         {
-          questionImage: "./album covers/01.png", // Clear image for question
-          answerImage: "./album covers/01_patti smith.png", // Clear image for answer
+          questionImage: "./album covers/01.png",
+          answerImage: "./album covers/01_patti smith.png",
           artist: "Patti Smith",
           album: "Horses",
           hint: "P _ _ _ _  S _ _ _ _",
@@ -96,5 +96,61 @@ export const albumQuizData = [
           artist: "Judas Priest",
           album: "British Steel, 1980",
           hint: "J _ _ _ _  P _ _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/15.png",
+          answerImage: "./album covers/15_joy division.png",
+          artist: "Joy Division",
+          album: "Unknown Pleasures, 1979",
+          hint: "J _ _  D _ _ _ _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/16.png",
+          answerImage: "./album covers/16_duran duran.png",
+          artist: "duran duran",
+          album: "Rio, 1982",
+          hint: "D _ _ _ _  D _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/17.png",
+          answerImage: "./album covers/17_drake.png",
+          artist: "drake",
+          album: "If You’re Reading This It’s Too Late, 2015",
+          hint: "D _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/18.png",
+          answerImage: "./album covers/18_the rolling stones.png",
+          artist: "the rolling stones",
+          album: "Sticky Fingers, 2015",
+          hint: "The R _ _ _ _ _ _  S _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/19.png",
+          answerImage: "./album covers/19_david bowie.png",
+          artist: "David Bowie",
+          album: "Aladdin Sane, 1973",
+          hint: "D _ _ _ _  B _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/20.png",
+          answerImage: "./album covers/20_bruce springsteen.png",
+          artist: "Bruce Springsteen",
+          album: "Born in the U.S.A., 1984",
+          hint: "B _ _ _ _  S _ _ _ _ _ _ _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/21.png",
+          answerImage: "./album covers/21_aretha franklin.png",
+          artist: "Aretha Franklin",
+          album: "I Never Loved a Man the Way I Love You, 1967",
+          hint: "A _ _ _ _ _  F _ _ _ _ _ _ _",
+        },
+        {
+          questionImage: "./album covers/22.png",
+          answerImage: "./album covers/22_sex pistols.png",
+          artist: "Sex Pistols",
+          album: "Never Mind the Bollocks, Here’s the Sex Pistols, 1977",
+          hint: "S _ _  P _ _ _ _ _ _",
         },
       ];
